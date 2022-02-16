@@ -65,7 +65,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ battery_perc, "[%s% ] ",    "BAT0"      },
-	{ datetime,     "%s ",        "%F %T"     },
-	{ wifi_perc,    "{%s }",      "wlp0s20f3" },
+	{ battery_perc, "[%s% ] ",      "BAT0"  },
+	{ datetime,     "%s ",           "%F %T" },
+	{ wifi_perc,    "{%s%  wlan0}",  "wlan0" },
+	{ ipv4,         "{%s  VPN}",    "tun0"  },
 };
